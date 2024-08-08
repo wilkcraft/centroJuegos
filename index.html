@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #1F1B24;
+            color: #e0e0e0;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .game-card {
+            background-color: #1F1B24;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            background-color: transparent;
+        }
+        .game-card h3 {
+            margin: 10px;
+            color: #e0e0e0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .game-card a {
+            display: block;
+            text-align: center;
+            background-color: #455A64;
+            color: #e0e0e0;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+        }
+        .game-card a:hover {
+            background-color: #37474F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Centro de Juegos</h1>
+    </header>
+    <div class="container">
+        <div class="game-card">
+            <h3>Tres en Raya</h3>
+            <a href="https://wilkcraft.github.io/tres_en_raya/" target="_blank">Jugar</a>
+        </div>
+        <div class="game-card">
+            <h3>Dinosaurio</h3>
+            <a href="https://wilkcraft.github.io/dinosaurio/" target="_blank">Jugar</a>
+        </div>
+        <div class="game-card">
+            <h3>Snake</h3>
+            <a href="https://wilkcraft.github.io/snake/" target="_blank">Jugar</a>
+        </div>
+        <div class="game-card">
+            <h3>Pacman</h3>
+            <a href="https://wilkcraft.github.io/pacman/" target="_blank">Jugar</a>
+        </div>
+    </div>
+</body>
+</html>
